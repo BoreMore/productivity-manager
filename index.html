@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Productivity Manager</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Productivity Manager</h2>
+        <hr>
+        <ul class="nav-ul">
+            <li>
+                <a data-view="todo" class="nav-switch active">
+                    Todo List
+                </a>
+            </li>
+            <li>
+                <a data-view="current-projects" class="nav-switch">
+                    Current Projects
+                </a>
+            </li>
+            <div class="blocked-sites-nav">
+                <li>
+                    <a data-view="blocked" class="nav-switch">
+                        Blocked Sites
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <br>
+        <div id="todo" class="view my-list">
+            <h3>Todo List</h3>
+            <ul id="todo-list">
+                
+            </ul>
+            <button id="mark-todo-complete" class="complete-tasks">Mark Complete</button>
+            <br>
+            <br>
+            <br>
+            <input id="todo-input" placeholder="Add an item to your todo list">
+            <button id="add-todo">Add</button>
+        </div>
+        <div id="current-projects" class="view current-project-list">
+            <h3>Current Projects</h3>
+            <ul id="project-list">
+                
+            </ul>
+            <button id="mark-project-complete" class="complete-tasks">Mark Complete</button>
+            <br>
+            <br>
+            <br>
+            <input id="project-input" placeholder="Add an item to your project list">
+            <button id="add-project">Add</button>
+        </div>
+        <div id="blocked" class="view blocked-sites">
+            <h3>Blocked Sites</h3>
+            <ul id="blocked-sites-list">
+
+            </ul>
+            <br>
+            <input id="site-to-block" placeholder="Add a site">
+            <button id="block-site">Block Site</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

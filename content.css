@@ -1,0 +1,29 @@
+/* content script css */
+.position-absolute-blocked {
+    width: 100%;
+    width: 100vw;
+    height: 100%;
+    height: 100vh;
+    background-color: orange;
+    z-index: 1000 !important;
+}
+.centered-blocked {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.centered-blocked h1 {
+    font-size: 30px;
+    color: black;
+    margin: 15px auto;
+}
+.centered-blocked p {
+    font-size: 20px;
+    color: black;
+    margin: 15px auto;
+}

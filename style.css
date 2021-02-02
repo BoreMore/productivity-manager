@@ -1,0 +1,67 @@
+/* popup css */
+body {
+    width: 500px;
+}
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+.nav-ul li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.nav-ul li a {
+    font-weight: bold;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.nav-ul li a.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: tomato;
+    display: block;
+    bottom: -2px;
+}
+.blocked-sites, .current-project-list {
+    display: none;
+}
+.view ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list-item {
+    position: relative;
+    display: block;
+    padding: 5px;
+    height: 20px;
+    border-top: 1px solid gray;
+}
+.list-item p {
+    font-size: 15px;
+    float: left;
+    margin: 0;
+}
+.list-item input[type="checkbox"] {
+    float: left;
+}
+.list-item button {
+    float: right;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+/* for displaying the blocked sites button on the right */
+/* .blocked-sites-nav {
+    float: right;
+    display: inline;
+    margin-right: 0;
+} */
