@@ -42,12 +42,10 @@ body {
     position: relative;
     display: block;
     padding: 5px;
-    height: 20px;
     border-top: 1px solid gray;
 }
 .list-item p {
     font-size: 15px;
-    float: left;
     margin: 0;
 }
 .list-item input[type="checkbox"] {
