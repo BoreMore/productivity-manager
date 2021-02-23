@@ -47,6 +47,7 @@ body {
 .list-item p {
     font-size: 15px;
     margin: 0;
+    display: inline;
 }
 .list-item input[type="checkbox"] {
     float: left;
